@@ -1,0 +1,11 @@
+package internpro.internpro;
+
+public class ValidateLogin {
+
+	public void validateLoginTest() {
+		System.setProperty("webdriver.edge.driver", "C:\\path\\to\\msedgedriver.exe");
+		WebDriver driver  new EdgeDriver();
+		
+		
+	}
+}
