@@ -5,6 +5,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import pages.LoginPage;
 import utils.DriverFactory;
 
 public class LoginTest {
