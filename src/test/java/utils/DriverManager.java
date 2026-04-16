@@ -8,6 +8,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
+import pages.AddToCart;
 import pages.HomePage;
 import pages.InvalidPage;
 import pages.ProductSearch;
@@ -24,6 +25,7 @@ public class DriverManager {
     protected RegisterPage registerpage;
     protected InvalidPage invalidPage;
     protected ProductSearch productsearch;
+    protected AddToCart addtocart;
 
     @BeforeClass
     public void setup() {
@@ -40,6 +42,7 @@ public class DriverManager {
         registerpage = new RegisterPage(driver, wait);
         invalidPage = new InvalidPage(driver, wait);
         productsearch= new ProductSearch(driver,wait);
+        addtocart= new AddToCart(driver,wait);
     }
 
     @AfterClass
