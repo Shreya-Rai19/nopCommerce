@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeMethod;
 
 import pages.HomePage;
 import pages.InvalidPage;
+import pages.ProductSearch;
 import pages.RegisterPage;
 
 public class DriverManager {
@@ -22,6 +23,7 @@ public class DriverManager {
     protected HomePage homepage;
     protected RegisterPage registerpage;
     protected InvalidPage invalidPage;
+    protected ProductSearch productsearch;
 
     @BeforeClass
     public void setup() {
@@ -37,6 +39,7 @@ public class DriverManager {
         homepage = new HomePage(driver, wait);
         registerpage = new RegisterPage(driver, wait);
         invalidPage = new InvalidPage(driver, wait);
+        productsearch= new ProductSearch(driver,wait);
     }
 
     @AfterClass
