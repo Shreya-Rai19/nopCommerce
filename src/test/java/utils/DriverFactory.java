@@ -16,7 +16,8 @@ public class DriverFactory {
             } else if (browser.equalsIgnoreCase("firefox")) {
                 driver = new FirefoxDriver();
             } else if (browser.equalsIgnoreCase("edge")) {
-                System.setProperty("webdriver.edge.driver", "path/to/msedgedriver.exe");
+            	System.setProperty("webdriver.edge.driver",
+            	        "C:\\New folder\\edgedriver_win64\\msedgedriver.exe");
                 driver = new EdgeDriver();
             } else {
                 throw new RuntimeException("Unsupported browser: " + browser);

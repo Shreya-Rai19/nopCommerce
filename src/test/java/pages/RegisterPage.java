@@ -21,7 +21,7 @@ public class RegisterPage {
 	By emailField = By.id("Email");
 	By passwordField = By.id("Password");
 	By confirmpasswordField = By.id("ConfirmPassword");
-	By registerButton = By.xpath("//Button[@type='submit']");
+	By registerButton = By.id("register-button");
 	By successMessage = By.cssSelector("div.result");
 	By continueButton = By.cssSelector(".button-1.register-continue-button");
 	
