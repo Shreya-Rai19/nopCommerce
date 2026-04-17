@@ -17,7 +17,6 @@ import pages.ProductSearch;
 import pages.RegisterPage;
 
 public class DriverManager {
-
     protected WebDriver driver;
     protected WebDriverWait wait;
     protected ConfigReader config = new ConfigReader();

@@ -1,12 +1,9 @@
 package test;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import pages.LoginPage;
-import utils.DriverFactory;
+import utils.CredentialUtil;
 import utils.DriverManager;
 
 public class LoginTest extends DriverManager{
@@ -17,8 +14,8 @@ public class LoginTest extends DriverManager{
         // Perform actions
         homepage.clickLogout();
         loginpage.clickLogin();
-        loginpage.enterEmail("admin9@gmail.com");
-        loginpage.enterPassword("password");
+        loginpage.enterEmail(CredentialUtil.email);
+        loginpage.enterPassword(CredentialUtil.password);
         loginpage.clickLoginButton();
 
         // Validation
