@@ -32,7 +32,20 @@ public class AddToCart {
 	By pieBook=By.xpath("//img[@alt='Picture of First Prize Pies']");
 	By addBook=By.id("add-to-cart-button-37");
 	By close=By.xpath("//p[@class='content']");
-	By cart=By.xpath("//a[@class='ico-cart']");
+	By cart=By.xpath("//*[@id=\"topcartlink\"]/a/span[1]");
+	
+	private void handlePopup() {
+	    By success = By.cssSelector(".bar-notification.success");
+	    By closeBtn = By.cssSelector(".bar-notification .close");
+
+	    wait.until(ExpectedConditions.visibilityOfElementLocated(success));
+
+	    
+	    wait.until(ExpectedConditions.elementToBeClickable(closeBtn)).click();
+
+	    //wait.until(ExpectedConditions.invisibilityOfElementLocated(success));
+	}
+	
 	public void selectElectronics()
 	{
 		driver.findElement(home).click();
@@ -42,6 +55,7 @@ public class AddToCart {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(addApple)).click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".bar-notification.success")));
 
+		handlePopup();
 	}
 	
 	public void selectApparel()
@@ -59,6 +73,7 @@ public class AddToCart {
 		action.click(addToCart).build().perform();
 		System.out.println(addToCart.getText());
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".bar-notification.success")));
+		handlePopup();
 	}
 	
 	public void selectBooks()
@@ -68,11 +83,10 @@ public class AddToCart {
 		driver.findElement(addBook).click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".bar-notification.success")));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(close)).click();
+		handlePopup();
 	}
-	public void displayCart()
-	{
-		wait.until(ExpectedConditions.visibilityOfElementLocated(cart)).click();
-	}
+	
+
 	
 
 }
