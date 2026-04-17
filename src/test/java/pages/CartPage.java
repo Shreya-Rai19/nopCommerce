@@ -17,9 +17,9 @@ public class CartPage {
 	WebDriver driver;
 	WebDriverWait wait;
 	
-	 public CartPage(WebDriver driver) {
+	 public CartPage(WebDriver driver,WebDriverWait wait) {
 	        this.driver = driver;
-	        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	        this.wait =wait;
 	    }
 
 	

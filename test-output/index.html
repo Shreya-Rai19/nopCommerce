@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-combined_test" class="navigator-link">
+              <span class="suite-name border-failed">combined test</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\sowmya.prabhu\AppData\Local\Temp\testng-eclipse-1196960680\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-combined_test" class="navigator-link ">
+                    <span>C:\Users\sowmya.prabhu\Desktop\nopCommerce\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-combined_test" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-combined_test" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-combined_test" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-combined_test" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-combined_test" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-combined_test" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,21 +92,75 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-combined_test" class="hide-methods failed suite-combined_test"> (hide)</a> <!-- hide-methods failed suite-combined_test -->
+                      <a href="#" panel-name="suite-combined_test" class="show-methods failed suite-combined_test"> (show)</a> <!-- show-methods failed suite-combined_test -->
+                    </span>
+                    <div class="method-list-content failed suite-combined_test">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-combined_test" title="test.ProductSearchTest" class="method navigator-link" hash-for-method="searchProductTest">searchProductTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-combined_test -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-combined_test" class="hide-methods passed suite-combined_test"> (hide)</a> <!-- hide-methods passed suite-combined_test -->
+                      <a href="#" panel-name="suite-combined_test" class="show-methods passed suite-combined_test"> (show)</a> <!-- show-methods passed suite-combined_test -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-combined_test">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="test.AddToCartTest" class="method navigator-link" hash-for-method="addTest">addTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-combined_test" title="test.AddToCartTest" class="method navigator-link" hash-for-method="addTest">addTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-combined_test" title="test.RegisterTest" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-combined_test" title="test.InvalidLogin" class="method navigator-link" hash-for-method="testInvalidLogin(, somepassword, Please enter your email)">testInvalidLogin(, somepassword, Please enter your email)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-combined_test" title="test.InvalidLogin" class="method navigator-link" hash-for-method="testInvalidLogin(wronguser@example.com, ValidPassword123, Login was unsuccessful)">testInvalidLogin(wronguser@example.com, ValidPassword123, Login was unsuccessful)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-combined_test" title="test.InvalidLogin" class="method navigator-link" hash-for-method="testInvalidLogin(validuser@example.com, wrongpassword, Login was unsuccessful)">testInvalidLogin(validuser@example.com, wrongpassword, Login was unsuccessful)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-combined_test" title="test.InvalidLogin" class="method navigator-link" hash-for-method="testInvalidLogin(wronguser@example.com, wrongpassword, Login was unsuccessful)">testInvalidLogin(wronguser@example.com, wrongpassword, Login was unsuccessful)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-combined_test" title="test.InvalidLogin" class="method navigator-link" hash-for-method="testInvalidLogin(, , Please enter your email)">testInvalidLogin(, , Please enter your email)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-combined_test" title="test.InvalidLogin" class="method navigator-link" hash-for-method="testInvalidLogin(user@example.com, , Login was unsuccessful)">testInvalidLogin(user@example.com, , Login was unsuccessful)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-combined_test" title="test.LoginTest" class="method navigator-link" hash-for-method="validLoginTest">validLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-combined_test -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,8 +171,76 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-combined_test" class="panel combined_test">
+          <div class="suite-combined_test-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.ProductSearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchProductTest">
+                  </a> <!-- searchProductTest -->
+                  <span class="method-name">searchProductTest</span>
+                  <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please enter some search keyword}
+  (Session info: chrome=147.0.7727.101): Please enter some search keyword
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a1ce37d6c37a5f82ea5228241337b142, findElement {value=small-searchterms, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.101, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\SOWMYA~1.PRA\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52568}, goog:processID: 17240, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52568/devtoo..., se:cdpVersion: 147.0.7727.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a1ce37d6c37a5f82ea5228241337b142
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at pages.ProductSearch.enterSearchKeyword(ProductSearch.java:21)
+	at test.ProductSearchTest.searchProductTest(ProductSearchTest.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-combined_test-class-failed -->
+          <div class="suite-combined_test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLoginTest">
+                  </a> <!-- validLoginTest -->
+                  <span class="method-name">validLoginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-combined_test-class-passed -->
+          <div class="suite-combined_test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.RegisterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-combined_test-class-passed -->
+          <div class="suite-combined_test-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">test.AddToCartTest</span>
@@ -132,111 +254,340 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-combined_test-class-passed -->
+          <div class="suite-combined_test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.InvalidLogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidLogin(, somepassword, Please enter your email)">
+                  </a> <!-- testInvalidLogin(, somepassword, Please enter your email) -->
+                  <span class="method-name">testInvalidLogin</span>
+                  <span class="parameters">(,somepassword,Please enter your email)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidLogin(wronguser@example.com, ValidPassword123, Login was unsuccessful)">
+                  </a> <!-- testInvalidLogin(wronguser@example.com, ValidPassword123, Login was unsuccessful) -->
+                  <span class="method-name">testInvalidLogin</span>
+                  <span class="parameters">(wronguser@example.com,ValidPassword123,Login was unsuccessful)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidLogin(validuser@example.com, wrongpassword, Login was unsuccessful)">
+                  </a> <!-- testInvalidLogin(validuser@example.com, wrongpassword, Login was unsuccessful) -->
+                  <span class="method-name">testInvalidLogin</span>
+                  <span class="parameters">(validuser@example.com,wrongpassword,Login was unsuccessful)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidLogin(wronguser@example.com, wrongpassword, Login was unsuccessful)">
+                  </a> <!-- testInvalidLogin(wronguser@example.com, wrongpassword, Login was unsuccessful) -->
+                  <span class="method-name">testInvalidLogin</span>
+                  <span class="parameters">(wronguser@example.com,wrongpassword,Login was unsuccessful)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidLogin(, , Please enter your email)">
+                  </a> <!-- testInvalidLogin(, , Please enter your email) -->
+                  <span class="method-name">testInvalidLogin</span>
+                  <span class="parameters">(,,Please enter your email)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidLogin(user@example.com, , Login was unsuccessful)">
+                  </a> <!-- testInvalidLogin(user@example.com, , Login was unsuccessful) -->
+                  <span class="method-name">testInvalidLogin</span>
+                  <span class="parameters">(user@example.com,,Login was unsuccessful)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-combined_test-class-passed -->
+        </div> <!-- panel combined_test -->
+        <div panel-name="test-xml-combined_test" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\sowmya.prabhu\AppData\Local\Temp\testng-eclipse-1196960680\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\sowmya.prabhu\Desktop\nopCommerce\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite name=&quot;combined test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;pom+testng&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;test.RegisterTest&quot;/&gt;
+      &lt;class name=&quot;test.InvalidLogin&quot;/&gt;
+      &lt;class name=&quot;test.LoginTest&quot;/&gt;
+      &lt;class name=&quot;test.ProductSearchTest&quot;/&gt;
       &lt;class name=&quot;test.AddToCartTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- pom+testng --&gt;
+&lt;/suite&gt; &lt;!-- combined test --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-combined_test" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for combined test</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">pom+testng (5 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-combined_test" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for combined test</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-combined_test" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for combined test</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_combined_test');
+function tableData_combined_test() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'addTest')
 data.setCell(0, 2, 'test.AddToCartTest')
-data.setCell(0, 3, 20938);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 3, 23455);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'test1')
+data.setCell(1, 2, 'test.RegisterTest')
+data.setCell(1, 3, 5475);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'searchProductTest')
+data.setCell(2, 2, 'test.ProductSearchTest')
+data.setCell(2, 3, 4640);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'validLoginTest')
+data.setCell(3, 2, 'test.LoginTest')
+data.setCell(3, 3, 4031);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testInvalidLogin')
+data.setCell(4, 2, 'test.InvalidLogin')
+data.setCell(4, 3, 2992);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testInvalidLogin')
+data.setCell(5, 2, 'test.InvalidLogin')
+data.setCell(5, 3, 2766);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testInvalidLogin')
+data.setCell(6, 2, 'test.InvalidLogin')
+data.setCell(6, 3, 2711);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testInvalidLogin')
+data.setCell(7, 2, 'test.InvalidLogin')
+data.setCell(7, 3, 2710);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testInvalidLogin')
+data.setCell(8, 2, 'test.InvalidLogin')
+data.setCell(8, 3, 1666);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testInvalidLogin')
+data.setCell(9, 2, 'test.InvalidLogin')
+data.setCell(9, 3, 1525);
+window.suiteTableData['combined_test']= { tableData: data, tableDiv: 'times-div-combined_test'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 51 seconds</span>
+              <div id="times-div-combined_test">
+              </div> <!-- times-div-combined_test -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-combined_test" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for combined test</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-combined_test" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">test.LoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">test.ProductSearchTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">test.AddToCartTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">test.InvalidLogin</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-combined_test" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">test.AddToCartTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">test.RegisterTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">instantiatePages</span>
-                <span class="method-start">7230 ms</span>
+                <span class="method-start">7323 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test1</span>
+                <span class="method-start">7349 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.InvalidLogin</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">12861 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">instantiatePages</span>
+                <span class="method-start">13628 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testInvalidLogin(wronguser@example.com, wrongpassword, Login was unsuccessful)</span>
+                <span class="method-start">13631 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">instantiatePages</span>
+                <span class="method-start">16346 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testInvalidLogin(validuser@example.com, wrongpassword, Login was unsuccessful)</span>
+                <span class="method-start">16348 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">instantiatePages</span>
+                <span class="method-start">19345 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testInvalidLogin(wronguser@example.com, ValidPassword123, Login was unsuccessful)</span>
+                <span class="method-start">19348 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">instantiatePages</span>
+                <span class="method-start">22118 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testInvalidLogin(, somepassword, Please enter your email)</span>
+                <span class="method-start">22119 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">instantiatePages</span>
+                <span class="method-start">23790 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testInvalidLogin(user@example.com, , Login was unsuccessful)</span>
+                <span class="method-start">23793 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testInvalidLogin(, , Please enter your email)</span>
+                <span class="method-start">26505 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">instantiatePages</span>
+                <span class="method-start">26505 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">28034 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">instantiatePages</span>
+                <span class="method-start">28811 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validLoginTest</span>
+                <span class="method-start">28812 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.ProductSearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">32848 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">instantiatePages</span>
+                <span class="method-start">33433 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchProductTest</span>
+                <span class="method-start">33434 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.AddToCartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">38093 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">instantiatePages</span>
+                <span class="method-start">38723 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addTest</span>
-                <span class="method-start">7244 ms</span>
+                <span class="method-start">38725 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.RegisterTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">28191 ms</span>
-              </div> <!-- configuration-class after -->
+                <span class="method-start">62359 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -4,13 +4,15 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
 import pages.AddToCart;
+import pages.CartPage;
 import pages.HomePage;
 import pages.InvalidPage;
+import pages.LoginPage;
 import pages.ProductSearch;
 import pages.RegisterPage;
 
@@ -23,9 +25,11 @@ public class DriverManager {
     // Page objects
     protected HomePage homepage;
     protected RegisterPage registerpage;
+    protected LoginPage loginpage;
     protected InvalidPage invalidPage;
     protected ProductSearch productsearch;
     protected AddToCart addtocart;
+    protected CartPage cart;
 
     @BeforeClass
     public void setup() {
@@ -43,9 +47,11 @@ public class DriverManager {
         invalidPage = new InvalidPage(driver, wait);
         productsearch= new ProductSearch(driver,wait);
         addtocart= new AddToCart(driver,wait);
+        cart = new CartPage(driver,wait);
+        loginpage = new LoginPage(driver,wait);
     }
 
-    @AfterClass
+    @AfterSuite
     public void tearDown() {
         if (driver != null) {
             driver.quit();

@@ -1,29 +1,288 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-17T10:54:13 IST" name="Default suite" finished-at="2026-04-17T10:54:42 IST" duration-ms="29053">
+  <suite started-at="2026-04-17T11:43:56 IST" name="combined test" finished-at="2026-04-17T11:44:58 IST" duration-ms="62264">
     <groups>
     </groups>
-    <test started-at="2026-04-17T10:54:13 IST" name="Default test" finished-at="2026-04-17T10:54:42 IST" duration-ms="29053">
-      <class name="test.AddToCartTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:test.AddToCartTest@5afa3c9]" started-at="2026-04-17T10:54:13 IST" name="setup" finished-at="2026-04-17T10:54:20 IST" duration-ms="7195" status="PASS">
+    <test started-at="2026-04-17T11:43:56 IST" name="pom+testng" finished-at="2026-04-17T11:44:58 IST" duration-ms="62264">
+      <class name="test.RegisterTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.RegisterTest@5032714f]" started-at="2026-04-17T11:43:56 IST" name="setup" finished-at="2026-04-17T11:44:03 IST" duration-ms="7283" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="instantiatePages()[pri:0, instance:test.AddToCartTest@5afa3c9]" started-at="2026-04-17T10:54:20 IST" name="instantiatePages" finished-at="2026-04-17T10:54:20 IST" duration-ms="14" status="PASS">
+        <test-method is-config="true" signature="instantiatePages()[pri:0, instance:test.RegisterTest@5032714f]" started-at="2026-04-17T11:44:03 IST" name="instantiatePages" finished-at="2026-04-17T11:44:03 IST" duration-ms="24" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- instantiatePages -->
-        <test-method signature="addTest()[pri:0, instance:test.AddToCartTest@5afa3c9]" started-at="2026-04-17T10:54:20 IST" name="addTest" finished-at="2026-04-17T10:54:41 IST" duration-ms="20938" status="PASS">
+        <test-method signature="test1()[pri:0, instance:test.RegisterTest@5032714f]" started-at="2026-04-17T11:44:03 IST" name="test1" finished-at="2026-04-17T11:44:09 IST" duration-ms="5475" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.AddToCartTest@5afa3c9]" started-at="2026-04-17T10:54:41 IST" name="tearDown" finished-at="2026-04-17T10:54:42 IST" duration-ms="790" status="PASS">
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.RegisterTest@5032714f]" started-at="2026-04-17T11:44:58 IST" name="tearDown" finished-at="2026-04-17T11:44:59 IST" duration-ms="1058" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+      </class> <!-- test.RegisterTest -->
+      <class name="test.ProductSearchTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.ProductSearchTest@710c2b53]" started-at="2026-04-17T11:44:29 IST" name="setup" finished-at="2026-04-17T11:44:29 IST" duration-ms="583" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="instantiatePages()[pri:0, instance:test.ProductSearchTest@710c2b53]" started-at="2026-04-17T11:44:29 IST" name="instantiatePages" finished-at="2026-04-17T11:44:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiatePages -->
+        <test-method signature="searchProductTest()[pri:0, instance:test.ProductSearchTest@710c2b53]" started-at="2026-04-17T11:44:29 IST" name="searchProductTest" finished-at="2026-04-17T11:44:34 IST" duration-ms="4640" status="FAIL">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[unexpected alert open: {Alert text : Please enter some search keyword}
+  (Session info: chrome=147.0.7727.101): Please enter some search keyword
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a1ce37d6c37a5f82ea5228241337b142, findElement {value=small-searchterms, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.101, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\SOWMYA~1.PRA\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52568}, goog:processID: 17240, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52568/devtoo..., se:cdpVersion: 147.0.7727.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a1ce37d6c37a5f82ea5228241337b142]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please enter some search keyword}
+  (Session info: chrome=147.0.7727.101): Please enter some search keyword
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a1ce37d6c37a5f82ea5228241337b142, findElement {value=small-searchterms, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.101, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\SOWMYA~1.PRA\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52568}, goog:processID: 17240, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52568/devtoo..., se:cdpVersion: 147.0.7727.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a1ce37d6c37a5f82ea5228241337b142
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at pages.ProductSearch.enterSearchKeyword(ProductSearch.java:21)
+at test.ProductSearchTest.searchProductTest(ProductSearchTest.java:17)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProductTest -->
+      </class> <!-- test.ProductSearchTest -->
+      <class name="test.InvalidLogin">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.InvalidLogin@6fa51cd4]" started-at="2026-04-17T11:44:09 IST" name="setup" finished-at="2026-04-17T11:44:10 IST" duration-ms="756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="instantiatePages()[pri:0, instance:test.InvalidLogin@6fa51cd4]" started-at="2026-04-17T11:44:10 IST" name="instantiatePages" finished-at="2026-04-17T11:44:10 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiatePages -->
+        <test-method signature="testInvalidLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.InvalidLogin@6fa51cd4]" started-at="2026-04-17T11:44:10 IST" name="testInvalidLogin" data-provider="invalidCredentials" finished-at="2026-04-17T11:44:12 IST" duration-ms="2711" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wronguser@example.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrongpassword]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Login was unsuccessful]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="instantiatePages()[pri:0, instance:test.InvalidLogin@6fa51cd4]" started-at="2026-04-17T11:44:12 IST" name="instantiatePages" finished-at="2026-04-17T11:44:12 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiatePages -->
+        <test-method signature="testInvalidLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.InvalidLogin@6fa51cd4]" started-at="2026-04-17T11:44:12 IST" name="testInvalidLogin" data-provider="invalidCredentials" finished-at="2026-04-17T11:44:15 IST" duration-ms="2992" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[validuser@example.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrongpassword]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Login was unsuccessful]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="instantiatePages()[pri:0, instance:test.InvalidLogin@6fa51cd4]" started-at="2026-04-17T11:44:15 IST" name="instantiatePages" finished-at="2026-04-17T11:44:15 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiatePages -->
+        <test-method signature="testInvalidLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.InvalidLogin@6fa51cd4]" started-at="2026-04-17T11:44:15 IST" name="testInvalidLogin" data-provider="invalidCredentials" finished-at="2026-04-17T11:44:18 IST" duration-ms="2766" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wronguser@example.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ValidPassword123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Login was unsuccessful]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="instantiatePages()[pri:0, instance:test.InvalidLogin@6fa51cd4]" started-at="2026-04-17T11:44:18 IST" name="instantiatePages" finished-at="2026-04-17T11:44:18 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiatePages -->
+        <test-method signature="testInvalidLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.InvalidLogin@6fa51cd4]" started-at="2026-04-17T11:44:18 IST" name="testInvalidLogin" data-provider="invalidCredentials" finished-at="2026-04-17T11:44:20 IST" duration-ms="1666" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[somepassword]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please enter your email]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="instantiatePages()[pri:0, instance:test.InvalidLogin@6fa51cd4]" started-at="2026-04-17T11:44:20 IST" name="instantiatePages" finished-at="2026-04-17T11:44:20 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiatePages -->
+        <test-method signature="testInvalidLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.InvalidLogin@6fa51cd4]" started-at="2026-04-17T11:44:20 IST" name="testInvalidLogin" data-provider="invalidCredentials" finished-at="2026-04-17T11:44:23 IST" duration-ms="2710" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user@example.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Login was unsuccessful]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method signature="testInvalidLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.InvalidLogin@6fa51cd4]" started-at="2026-04-17T11:44:23 IST" name="testInvalidLogin" data-provider="invalidCredentials" finished-at="2026-04-17T11:44:24 IST" duration-ms="1525" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please enter your email]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="instantiatePages()[pri:0, instance:test.InvalidLogin@6fa51cd4]" started-at="2026-04-17T11:44:23 IST" name="instantiatePages" finished-at="2026-04-17T11:44:23 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiatePages -->
+      </class> <!-- test.InvalidLogin -->
+      <class name="test.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.LoginTest@2767e23c]" started-at="2026-04-17T11:44:24 IST" name="setup" finished-at="2026-04-17T11:44:25 IST" duration-ms="773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="instantiatePages()[pri:0, instance:test.LoginTest@2767e23c]" started-at="2026-04-17T11:44:25 IST" name="instantiatePages" finished-at="2026-04-17T11:44:25 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiatePages -->
+        <test-method signature="validLoginTest()[pri:0, instance:test.LoginTest@2767e23c]" started-at="2026-04-17T11:44:25 IST" name="validLoginTest" finished-at="2026-04-17T11:44:29 IST" duration-ms="4031" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+      </class> <!-- test.LoginTest -->
+      <class name="test.AddToCartTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AddToCartTest@5386659f]" started-at="2026-04-17T11:44:34 IST" name="setup" finished-at="2026-04-17T11:44:35 IST" duration-ms="630" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="instantiatePages()[pri:0, instance:test.AddToCartTest@5386659f]" started-at="2026-04-17T11:44:35 IST" name="instantiatePages" finished-at="2026-04-17T11:44:35 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiatePages -->
+        <test-method signature="addTest()[pri:0, instance:test.AddToCartTest@5386659f]" started-at="2026-04-17T11:44:35 IST" name="addTest" finished-at="2026-04-17T11:44:58 IST" duration-ms="23455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addTest -->
       </class> <!-- test.AddToCartTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- pom+testng -->
+  </suite> <!-- combined test -->
 </testng-results>

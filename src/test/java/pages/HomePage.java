@@ -16,8 +16,13 @@ public class HomePage {
 	}
 	
 	By register = By.xpath("//a[@href='/register?returnUrl=%2F']");
+	By logout = By.className("ico-logout");
 	
 	public void clickRegister() {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(register)).click();
+	}
+	
+	public void clickLogout() {
+		wait.until(ExpectedConditions.visibilityOfElementLocated(logout)).click();
 	}
 }

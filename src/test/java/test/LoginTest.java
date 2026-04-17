@@ -1,37 +1,28 @@
 package test;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pages.LoginPage;
 import utils.DriverFactory;
+import utils.DriverManager;
 
-public class LoginTest{
-
+public class LoginTest extends DriverManager{
+	
     @Test
-    public void validLoginTest() {
-
-        // Driver setup (manual since your network has issues)
-        
-
-    	WebDriver driver = DriverFactory.getDriver("edge");
-        //WebDriver driver = new EdgeDriver();
-
-        driver.get("https://demo.nopcommerce.com/");
-        driver.manage().window().maximize();
-
-        // Create object of LoginPage
-        LoginPage lp = new LoginPage(driver);
+    public void validLoginTest(){
 
         // Perform actions
-        lp.clickLogin();
-        lp.enterEmail("admin@gmail.com");
-        lp.enterPassword("password");
-        lp.clickLoginButton();
+        homepage.clickLogout();
+        loginpage.clickLogin();
+        loginpage.enterEmail("admin9@gmail.com");
+        loginpage.enterPassword("password");
+        loginpage.clickLoginButton();
 
         // Validation
-        Assert.assertTrue(lp.isLoginSuccessful(), "Login Failed");
+        Assert.assertTrue(loginpage.isLoginSuccessful(), "Login Failed");
 
     }
 }

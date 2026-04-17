@@ -1,0 +1,11 @@
+<suite name="combined test">
+	<test name="pom+testng">
+		<classes>
+			<class name="test.RegisterTest"></class>
+			<class name="test.InvalidLogin"></class>
+			<class name="test.LoginTest"></class>
+			<class name="test.ProductSearchTest"></class>
+			<class name="test.AddToCartTest"></class>
+		</classes>
+	</test>
+</suite>

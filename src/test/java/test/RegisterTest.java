@@ -13,7 +13,7 @@ public class RegisterTest extends DriverManager {
 		registerpage.clickOnMale();
 		registerpage.enterFirstName("Admin");
 		registerpage.enterLastName("admin");
-		String uniqueEmail = "admin@gmail.com";
+		String uniqueEmail = "admin9@gmail.com";
 		registerpage.enterEmail(uniqueEmail);
 		registerpage.enterPassword("password");
 		registerpage.enterConfirmedPassword("password");

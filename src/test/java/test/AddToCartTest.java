@@ -13,9 +13,6 @@ public class AddToCartTest extends DriverManager{
 		addtocart.selectApparel();
 		addtocart.selectElectronics();
 		addtocart.selectBooks();
-		
-
-	     CartPage cart = new CartPage(driver);
 
 	       cart.goToCart();
 	       
