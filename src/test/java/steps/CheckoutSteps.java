@@ -10,7 +10,7 @@ import utils.CredentialUtil;
 import utils.DriverManager;
 import utils.Hooks;
 
-public class LogoutSteps{
+public class CheckoutSteps{
 	@Given("the user has added a product to the shopping cart")
 	public void addProductToCart() {
 		Hooks.homepage.clickRegister();
