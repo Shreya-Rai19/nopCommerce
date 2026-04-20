@@ -30,8 +30,7 @@ public class CartPage {
 	    
 	    public CartPage goToCart() {
 	    	wait.until(ExpectedConditions.elementToBeClickable(cartLink)).click();
-	        return this;
-	        
+	        return this;   
 	    }
 
 	 
@@ -71,7 +70,6 @@ public class CartPage {
 
 	            wait.until(d -> d.findElements(removeCheckbox).size() < sizeBefore);
 	        }
-
 	        return this;
 	    }
 	    

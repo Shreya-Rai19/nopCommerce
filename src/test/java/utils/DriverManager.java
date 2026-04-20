@@ -6,10 +6,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 
 import pages.AddToCart;
 import pages.CartPage;
+import pages.CheckoutPage;
 import pages.HomePage;
 import pages.InvalidPage;
 import pages.LoginPage;
@@ -29,6 +29,7 @@ public class DriverManager {
     protected ProductSearch productsearch;
     protected AddToCart addtocart;
     protected CartPage cart;
+    protected CheckoutPage checkoutpage;
 
     @BeforeClass
     public void setup() {
@@ -39,7 +40,7 @@ public class DriverManager {
         driver.get(config.getBaseUrl());
     }
 
-    @BeforeMethod
+    @BeforeClass
     public void instantiatePages() {
         homepage = new HomePage(driver, wait);
         registerpage = new RegisterPage(driver, wait);
@@ -48,6 +49,7 @@ public class DriverManager {
         addtocart= new AddToCart(driver,wait);
         cart = new CartPage(driver,wait);
         loginpage = new LoginPage(driver,wait);
+        checkoutpage = new CheckoutPage(driver,wait);
     }
 
     @AfterSuite
