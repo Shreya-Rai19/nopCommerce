@@ -3,14 +3,14 @@
 <suite name="Failed suite [combined test]">
   <test thread-count="5" name="pom+testng(failed)">
     <classes>
-      <class name="test.LoginTest">
+      <class name="test.ProductSearchTest">
         <methods>
-          <include name="validLoginTest"/>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="searchProductTest"/>
           <include name="instantiatePages"/>
         </methods>
-      </class> <!-- test.LoginTest -->
+      </class> <!-- test.ProductSearchTest -->
     </classes>
   </test> <!-- pom+testng(failed) -->
 </suite> <!-- Failed suite [combined test] -->

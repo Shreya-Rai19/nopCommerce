@@ -9,7 +9,8 @@ import java.util.concurrent.TimeUnit;
 public class DriverFactory {
     private static WebDriver driver;
 
-    public static WebDriver getDriver(String browser) {
+    @SuppressWarnings("deprecation")
+	public static WebDriver getDriver(String browser) {
         if (driver == null) {
             if (browser.equalsIgnoreCase("chrome")) {
                 driver = new ChromeDriver();

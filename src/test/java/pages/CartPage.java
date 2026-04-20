@@ -24,12 +24,9 @@ public class CartPage {
 
 	
 	 private By cartLink = By.className("ico-cart");
-	    private By cartItems = By.cssSelector(".cart-item-row");
 	    private By removeCheckbox = By.name("removefromcart");
 	    private By updateCartBtn = By.name("updatecart");
 	    private By emptyCartMsg = By.cssSelector(".no-data");
-	    private By successPopup = By.cssSelector(".bar-notification.success");
-
 	    
 	    public CartPage goToCart() {
 	    	wait.until(ExpectedConditions.elementToBeClickable(cartLink)).click();

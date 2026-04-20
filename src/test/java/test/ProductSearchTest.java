@@ -1,5 +1,6 @@
 package test;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import utils.DriverManager;
 
@@ -14,7 +15,9 @@ public class ProductSearchTest extends DriverManager {
         
         productsearch.enterSearchKeyword(keyword);
         productsearch.clickSearch();
+        Assert.assertTrue(productsearch.numberOfItems()>0);
         productsearch.enterSearchKeyword(keyword1);
         productsearch.clickSearch();
+        Assert.assertTrue(productsearch.numberOfItems()>0);
     }
 }

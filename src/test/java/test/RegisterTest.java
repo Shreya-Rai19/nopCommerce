@@ -1,6 +1,5 @@
 package test;
 
-import org.openqa.selenium.Alert;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -21,6 +20,5 @@ public class RegisterTest extends DriverManager {
 		registerpage.clickRegister();
 		Assert.assertTrue(registerpage.getSuccessMessage().toLowerCase().equals("your registration completed"));
 		registerpage.clickContinueButton();
-		
 	}
 }

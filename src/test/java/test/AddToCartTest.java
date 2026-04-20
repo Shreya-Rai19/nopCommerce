@@ -1,9 +1,7 @@
 package test;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import pages.CartPage;
 import utils.DriverManager;
 
 public class AddToCartTest extends DriverManager{
