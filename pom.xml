@@ -24,7 +24,7 @@
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-java</artifactId>
     <version>7.34.3</version>
-    <scope>compile</scope>
+    <scope>test</scope>
 </dependency>
 
 <!-- Source: https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
@@ -32,8 +32,13 @@
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-testng</artifactId>
     <version>7.34.3</version>
-    <scope>compile</scope>
+    <scope>test</scope>
 </dependency>
-</dependencies>
+  	<dependency>
+  		<groupId>com.demo</groupId>
+  		<artifactId>bddproject</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
   
 </project>

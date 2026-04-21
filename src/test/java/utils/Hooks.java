@@ -1,12 +1,14 @@
 package utils;
 
 import io.cucumber.java.Before;
+
 import io.cucumber.java.After;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 import pages.*;
+
 
 public class Hooks extends DriverManager{
     public static WebDriver driver;
@@ -21,11 +23,17 @@ public class Hooks extends DriverManager{
     public static AddToCart addtocart;
     public static CartPage cart;
     public static CheckoutPage checkoutpage;
+    public static ProfilePage profilepage;   
 
     @Before
     public void beforeScenario() {
-        driver = DriverFactory.getDriver(config.getBrowser());
-        driver.manage().window().maximize();
+    	driver = DriverFactory.getDriver(config.getBrowser());
+
+    	if (driver == null) {
+    	    throw new RuntimeException("Driver is null");
+    	}
+
+    	driver.manage().window().maximize();   // ✅ safe now
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         driver.get(config.getBaseUrl());
         
@@ -39,12 +47,11 @@ public class Hooks extends DriverManager{
         addtocart = new AddToCart(driver, wait);
         cart = new CartPage(driver, wait);
         checkoutpage = new CheckoutPage(driver, wait);
+        profilepage = new ProfilePage(driver, wait);  // ✅ ADD THIS
     }
 
     @After
     public void afterScenario() {
-        if (driver != null) {
-            driver.quit();
-        }
+        DriverFactory.quitDriver();   // ✅ USE FACTORY
     }
 }
