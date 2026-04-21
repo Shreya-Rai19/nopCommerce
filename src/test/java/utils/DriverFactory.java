@@ -9,14 +9,16 @@ import java.util.concurrent.TimeUnit;
 public class DriverFactory {
     private static WebDriver driver;
 
-    public static WebDriver getDriver(String browser) {
+    @SuppressWarnings("deprecation")
+	public static WebDriver getDriver(String browser) {
         if (driver == null) {
             if (browser.equalsIgnoreCase("chrome")) {
                 driver = new ChromeDriver();
             } else if (browser.equalsIgnoreCase("firefox")) {
                 driver = new FirefoxDriver();
             } else if (browser.equalsIgnoreCase("edge")) {
-                System.setProperty("webdriver.edge.driver", "path/to/msedgedriver.exe");
+            	System.setProperty("webdriver.edge.driver",
+            	        "C:\\New folder\\edgedriver_win64\\msedgedriver.exe");
                 driver = new EdgeDriver();
             } else {
                 throw new RuntimeException("Unsupported browser: " + browser);
