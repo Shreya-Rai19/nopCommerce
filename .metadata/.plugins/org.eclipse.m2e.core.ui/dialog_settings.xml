@@ -38,16 +38,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="internpro.internpro"/>
-			<item value="demo.demo"/>
 		</list>
 		<list key="groupId">
-			<item value="internpro"/>
-			<item value="demo"/>
 		</list>
 		<list key="artifactId">
-			<item value="internpro"/>
-			<item value="demo"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -63,10 +57,12 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.trail"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="demopro"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
