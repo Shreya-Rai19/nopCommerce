@@ -1,0 +1,11 @@
+package test;
+
+public class LoginTest {
+	public void validateTest() {
+		System.setProperty("webdriver.edge.driver", 
+		        "C:\\New folder\\edgedriver_win64\\msedgedriver.exe");
+
+		WebDriver driver = new EdgeDriver();
+	}
+
+}

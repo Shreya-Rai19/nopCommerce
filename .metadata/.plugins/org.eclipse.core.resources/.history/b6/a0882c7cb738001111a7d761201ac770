@@ -1,0 +1,35 @@
+package demo.demo;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class LoginTest {
+
+    @Test
+    public void validLoginTest() {
+
+        // Driver setup (manual since your network has issues)
+        System.setProperty("webdriver.edge.driver",
+        "C:\\New folder\\edgedriver_win64\\msedgedriver.exe");
+
+        WebDriver driver = new EdgeDriver();
+
+        driver.get("https://demo.nopcommerce.com/");
+        driver.manage().window().maximize();
+
+        // Create object of LoginPage
+        LoginPage lp = new LoginPage(driver);
+
+        // Perform actions
+        lp.clickLogin();
+        lp.enterEmail("admin@gmail.com");
+        lp.enterPassword("password");
+        lp.clickLoginButton();
+
+        // Validation
+        Assert.assertTrue(lp.isLoginSuccessful(), "Login Failed");
+
+    }
+}
